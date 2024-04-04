@@ -51,7 +51,7 @@ const config: HardhatUserConfig = {
     networks: {
         sepolia: {
             eid: EndpointId.SEPOLIA_V2_TESTNET,
-            url: process.env.RPC_URL_SEPOLIA || 'https://rpc.sepolia.org/',
+            url: process.env.RPC_URL_SEPOLIA || 'https://rpc-sepolia.rockx.com',
             accounts,
         },
         fuji: {
@@ -64,6 +64,16 @@ const config: HardhatUserConfig = {
             url: process.env.RPC_URL_MUMBAI || 'https://rpc.ankr.com/polygon_mumbai',
             accounts,
         },
+        base: {
+          eid: EndpointId.BASE_V2_MAINNET,
+          url: process.env.RPC_URL_BASE || 'https://rpc.ankr.com/base',
+          accounts,
+        },
+        basesepolia: {
+          eid: EndpointId.BASE_V2_TESTNET,
+          url: process.env.RPC_URL_BASESEPOLIA || '	https://sepolia.base.org',
+          accounts,
+        }
     },
     namedAccounts: {
         deployer: {

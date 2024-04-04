@@ -2,7 +2,7 @@ import assert from 'assert'
 
 import { type DeployFunction } from 'hardhat-deploy/types'
 
-const contractName = 'Bridge'
+const contractName = 'BaseBridge'
 
 const deploy: DeployFunction = async (hre) => {
     const { getNamedAccounts, deployments } = hre
@@ -31,13 +31,15 @@ const deploy: DeployFunction = async (hre) => {
     //     eid: EndpointId.AVALANCHE_V2_TESTNET
     //   }
     // }
-    const endpointV2Deployment = await hre.deployments.get('EndpointV2')
-
+    // const endpointV2Deployment = await hre.deployments.get('EndpointV2')
+  const endpointAddr = "0x6EDCE65403992e310A62460808c4b910D972f10f"
+  const asset = "0x78a3f816a8e26af8c09F6Da3995Ee19bd69bf7fF"
     const { address } = await deploy(contractName, {
         from: deployer,
         args: [
-            endpointV2Deployment.address, // LayerZero's EndpointV2 address
+            endpointAddr, // LayerZero's EndpointV2 address
             deployer, // owner
+            asset,
         ],
         log: true,
         skipIfAlreadyDeployed: false,
