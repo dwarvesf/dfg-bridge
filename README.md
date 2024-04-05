@@ -8,13 +8,13 @@
   <a href="https://layerzero.network" style="color: #a77dff">Homepage</a> | <a href="https://docs.layerzero.network/" style="color: #a77dff">Docs</a> | <a href="https://layerzero.network/developers" style="color: #a77dff">Developers</a>
 </p>
 
-<h1 align="center">OApp Example</h1>
+<h1 align="center">DFG Bridge</h1>
 
 <p align="center">
   <a href="https://docs.layerzero.network/contracts/oapp" style="color: #a77dff">Quickstart</a> | <a href="https://docs.layerzero.network/contracts/oapp-configuration" style="color: #a77dff">Configuration</a> | <a href="https://docs.layerzero.network/contracts/options" style="color: #a77dff">Message Execution Options</a> | <a href="https://docs.layerzero.network/contracts/endpoint-addresses" style="color: #a77dff">Endpoint Addresses</a>
 </p>
 
-<p align="center">Template project for getting started with LayerZero's  <code>OApp</code> contract development.</p>
+<p align="center">Contract to help bridge dfg between chains.</p>
 
 ## 1) Developing Contracts
 
